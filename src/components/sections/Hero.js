@@ -15,7 +15,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex items-center gap-4 mb-8"
+            className="hidden md:flex items-center gap-4 mb-8"
           >
             <div className="w-8 h-[1px] bg-skin-warm" />
             <span className="font-dm text-[10px] uppercase tracking-[0.2em] text-dust">

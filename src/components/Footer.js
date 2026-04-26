@@ -49,7 +49,7 @@ export default function Footer() {
               © 2025 Kennection
             </span>
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/kennection_studio/"
               className="font-dm text-[10px] uppercase tracking-widest text-dust hover:text-skin-warm transition-colors"
             >
               Instagram

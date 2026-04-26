@@ -84,7 +84,7 @@ export default function LoadingScreen({ onComplete }) {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="font-eb italic text-sm tracking-widest text-dust"
+                className="hidden md:block font-eb italic text-sm tracking-widest text-dust"
               >
                 Visual Studio · Pakistan
               </motion.p>

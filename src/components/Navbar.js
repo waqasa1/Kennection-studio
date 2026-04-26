@@ -31,19 +31,19 @@ export default function Navbar() {
         }`}
     >
       <div className="max-container flex items-center justify-between">
-        <Link href="/" className="relative h-7 w-32 md:h-16 md:w-80 transition-opacity hover:opacity-80">
+        <Link href="/" className="relative h-7 w-24 md:h-16 md:w-80 transition-opacity hover:opacity-80">
           <Image
             src={logo}
             alt="Kennection"
             fill
-            sizes="(max-width: 768px) 128px, 320px"
+            sizes="(max-width: 768px) 96px, 320px"
             className="object-contain invert brightness-0"
             priority
           />
         </Link>
 
         {/* Links */}
-        <div className="flex items-center gap-8 md:gap-12">
+        <div className="flex items-center gap-4 md:gap-12">
           {navLinks.map((link) => (
             <Link
               key={link.name}
