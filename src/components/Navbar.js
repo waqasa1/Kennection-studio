@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../app/assets/kennectionLogo.png";
+import logo from "../app/assets/kennectionLogo_white.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +37,7 @@ export default function Navbar() {
             alt="Kennection"
             fill
             sizes="(max-width: 768px) 96px, 320px"
-            className="object-contain invert brightness-0"
+            className="object-contain"
             priority
           />
         </Link>

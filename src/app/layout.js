@@ -51,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${ebGaramond.variable} ${dmSans.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${cormorant.variable} ${ebGaramond.variable} ${dmSans.variable}`}>
       <body className="antialiased">
         {children}
       </body>

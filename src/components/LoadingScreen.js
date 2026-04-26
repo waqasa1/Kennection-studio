@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import logo from "../app/assets/kennectionLogo.png";
+import logo from "../app/assets/kennectionLogo_white.png";
 
 export default function LoadingScreen({ onComplete }) {
   const [step, setStep] = useState(0);
@@ -57,7 +57,7 @@ export default function LoadingScreen({ onComplete }) {
                 width={600}
                 height={180}
                 style={{ width: 'auto', height: 'auto' }}
-                className="invert brightness-0"
+                className=""
                 priority
               />
             </motion.div>

@@ -7,7 +7,7 @@ import heroImage from "../../app/assets/kendoll_hero_image.webp";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full bg-studio-black overflow-hidden flex items-center">
-      <div className="max-container w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pt-20">
+      <div className="max-container w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pt-32 md:pt-20">
         
         {/* Text Content */}
         <div className="flex flex-col items-start">

@@ -3,9 +3,27 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../app/assets/kennectionLogo.png";
+import logo from "../app/assets/kennectionLogo_white.png";
 
 export default function Footer() {
+  const handleInstagramClick = (e) => {
+    e.preventDefault();
+    const username = "kennection_studio";
+    const webUrl = `https://www.instagram.com/${username}/`;
+    const appUrl = `instagram://user?username=${username}`;
+
+    if (typeof window !== 'undefined' && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      window.location.href = appUrl;
+      setTimeout(() => {
+        if (!document.hidden) {
+          window.location.href = webUrl;
+        }
+      }, 1000);
+    } else {
+      window.open(webUrl, '_blank');
+    }
+  };
+
   return (
     <footer id="book" className="bg-studio-black pt-48 pb-12 text-warm-white">
       <div className="max-container flex flex-col items-center text-center">
@@ -40,7 +58,7 @@ export default function Footer() {
               alt="Kennection"
               fill
               sizes="192px"
-              className="object-contain invert brightness-0"
+              className="object-contain"
             />
           </div>
 
@@ -50,7 +68,8 @@ export default function Footer() {
             </span>
             <Link
               href="https://www.instagram.com/kennection_studio/"
-              className="font-dm text-[10px] uppercase tracking-widest text-dust hover:text-skin-warm transition-colors"
+              onClick={handleInstagramClick}
+              className="font-dm text-[10px] uppercase tracking-widest text-dust hover:text-skin-warm transition-colors cursor-pointer"
             >
               Instagram
             </Link>
