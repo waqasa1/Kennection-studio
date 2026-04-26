@@ -84,14 +84,25 @@ body {
 
 /* Animations */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
 }
 
 .animate-marquee {
   display: flex;
+  width: max-content;
   white-space: nowrap;
-  animation: marquee 30s linear infinite;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+
+  @media (max-width: 768px) {
+    animation: marquee 18s linear infinite;
+  }
 }
 
 /* Smooth Scrolling */
